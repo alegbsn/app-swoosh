@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B21353152311DEF800428542 /* DesiredLeagueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21353142311DEF800428542 /* DesiredLeagueViewController.swift */; };
+		B21353172311DF0F00428542 /* SkillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21353162311DF0F00428542 /* SkillViewController.swift */; };
 		B2C38FA023102C1C00E9CC6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C38F9F23102C1C00E9CC6C /* AppDelegate.swift */; };
-		B2C38FA223102C1C00E9CC6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C38FA123102C1C00E9CC6C /* ViewController.swift */; };
+		B2C38FA223102C1C00E9CC6C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C38FA123102C1C00E9CC6C /* WelcomeViewController.swift */; };
 		B2C38FA523102C1C00E9CC6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C38FA323102C1C00E9CC6C /* Main.storyboard */; };
 		B2C38FA723102C2100E9CC6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2C38FA623102C2100E9CC6C /* Assets.xcassets */; };
 		B2C38FAA23102C2100E9CC6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C38FA823102C2100E9CC6C /* LaunchScreen.storyboard */; };
 		B2CBFA79231141ED0016E99A /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CBFA78231141ED0016E99A /* BorderButton.swift */; };
+		B2E0D27F2312005900F49FDB /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E0D27E2312005900F49FDB /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B21353142311DEF800428542 /* DesiredLeagueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesiredLeagueViewController.swift; sourceTree = "<group>"; };
+		B21353162311DF0F00428542 /* SkillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillViewController.swift; sourceTree = "<group>"; };
 		B2C38F9C23102C1C00E9CC6C /* app-swoosh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-swoosh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C38F9F23102C1C00E9CC6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2C38FA123102C1C00E9CC6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B2C38FA123102C1C00E9CC6C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B2C38FA423102C1C00E9CC6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2C38FA623102C2100E9CC6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2C38FA923102C2100E9CC6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2C38FAB23102C2100E9CC6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2CBFA78231141ED0016E99A /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		B2E0D27E2312005900F49FDB /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B213531223118EDE00428542 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2C38FA123102C1C00E9CC6C /* WelcomeViewController.swift */,
+				B21353142311DEF800428542 /* DesiredLeagueViewController.swift */,
+				B21353162311DF0F00428542 /* SkillViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B213531323118EEC00428542 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2E0D27E2312005900F49FDB /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B2C38F9323102C1C00E9CC6C = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +80,10 @@
 		B2C38F9E23102C1C00E9CC6C /* app-swoosh */ = {
 			isa = PBXGroup;
 			children = (
-				B2CBFA77231141B60016E99A /* Views */,
+				B213531323118EEC00428542 /* Model */,
+				B213531223118EDE00428542 /* Controller */,
+				B2CBFA77231141B60016E99A /* View */,
 				B2C38F9F23102C1C00E9CC6C /* AppDelegate.swift */,
-				B2C38FA123102C1C00E9CC6C /* ViewController.swift */,
 				B2C38FA323102C1C00E9CC6C /* Main.storyboard */,
 				B2C38FA623102C2100E9CC6C /* Assets.xcassets */,
 				B2C38FA823102C2100E9CC6C /* LaunchScreen.storyboard */,
@@ -67,12 +92,12 @@
 			path = "app-swoosh";
 			sourceTree = "<group>";
 		};
-		B2CBFA77231141B60016E99A /* Views */ = {
+		B2CBFA77231141B60016E99A /* View */ = {
 			isa = PBXGroup;
 			children = (
 				B2CBFA78231141ED0016E99A /* BorderButton.swift */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2C38FA223102C1C00E9CC6C /* ViewController.swift in Sources */,
+				B21353152311DEF800428542 /* DesiredLeagueViewController.swift in Sources */,
+				B2C38FA223102C1C00E9CC6C /* WelcomeViewController.swift in Sources */,
+				B21353172311DF0F00428542 /* SkillViewController.swift in Sources */,
 				B2C38FA023102C1C00E9CC6C /* AppDelegate.swift in Sources */,
+				B2E0D27F2312005900F49FDB /* Player.swift in Sources */,
 				B2CBFA79231141ED0016E99A /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
